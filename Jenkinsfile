@@ -8,8 +8,8 @@ pipeline {
    AWS_SECRET_ACCESS_KEY = credentials('nourahalanazi-aws-secret-access-key')
 	ARTIFACT_NAME = 'Dockerrun.aws.json'
 AWS_S3_BUCKET = 'nourahalanazi-belt2-artifacts-123456'
-AWS_EB_APP_NAME = 'nourahalanazi-eb'
-        AWS_EB_ENVIRONMENT_NAME = 'Nourahalanazieb-env'
+AWS_EB_APP_NAME = 'nourahalanazi-ebd4'
+        AWS_EB_ENVIRONMENT_NAME = 'Nourahalanaziebd4-env'
         AWS_EB_APP_VERSION = "${BUILD_ID}"
 	}
 
