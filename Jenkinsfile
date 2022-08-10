@@ -18,7 +18,7 @@ AWS_EB_APP_NAME = 'nourahalanazi-ebd4'
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t nourahalanazi/dojo-jump:latest .'
+				sh 'docker build -t nourahalanazi/nourahalanazi:latest .'
 			}
 		}
 
@@ -32,7 +32,7 @@ AWS_EB_APP_NAME = 'nourahalanazi-ebd4'
 		stage('Push') {
 
 			steps {
-				sh 'docker push nourahalanazi/dojo-jump:latest'
+				sh 'docker push nourahalanazi/nourahalanazi:latest'
 			}
 		}
 
