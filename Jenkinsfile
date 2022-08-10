@@ -18,7 +18,7 @@ AWS_EB_APP_NAME = 'nourahalanazi-ebd4'
       stage('Build') {
   
         steps {
-          sh 'docker build -t nourahalanazi/runaway-nourahgame:latest .'
+          sh 'docker build -t nourahalanazi/runaway-nourahgame:1.0.0 .'
         }
       }
   
@@ -32,7 +32,7 @@ AWS_EB_APP_NAME = 'nourahalanazi-ebd4'
       stage('Push') {
   
         steps {
-          sh 'docker push nourahalanazi/runaway-nourahgame:latest'
+          sh 'docker push nourahalanazi/runaway-nourahgame:1.0.0'
         }
       }
   
